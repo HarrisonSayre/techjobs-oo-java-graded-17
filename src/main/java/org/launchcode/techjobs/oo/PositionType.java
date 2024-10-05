@@ -27,7 +27,6 @@ public class PositionType {
     //  their id fields match.
 
     //WHICH METHOD TO USE OF THE TWO? I DID INSTANCE OF
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
