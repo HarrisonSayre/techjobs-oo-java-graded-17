@@ -40,7 +40,42 @@ public class JobTest {
         Job a = new Job("A", new Employer("B"), new Location("C"), new PositionType("D"), new CoreCompetency( "E"));
         Job b = new Job("A", new Employer("B"), new Location("C"), new PositionType("D"), new CoreCompetency( "E"));
         assertFalse(a.equals(b));
-
     }
+
+    @Test
+    public void testToStringStartsAndEndsWithNewLine(){
+        Job aJob = new Job("A", new Employer("B"), new Location("C"), new PositionType("D"), new CoreCompetency( "E"));
+        assertTrue(aJob.toString().startsWith(System.lineSeparator()));
+        assertTrue(aJob.toString().endsWith(System.lineSeparator()));
+    }
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData(){
+        Job aJob = new Job("A", new Employer("B"), new Location("C"), new PositionType("D"), new CoreCompetency( "E"));
+        String correct = System.lineSeparator()+
+                "ID: " + "1" +System.lineSeparator()+
+                "Name: " + "A" +System.lineSeparator()+
+                "Employer: " + "B" +System.lineSeparator()+
+                "Location: " + "C" +System.lineSeparator()+
+                "Position Type: " + "D" +System.lineSeparator()+
+                "Core Competency: " + "E" +
+                System.lineSeparator();
+        assertEquals(aJob.toString(), correct);
+    }
+
+    @Test
+    public void testToStringHandlesEmptyField() {
+        Job aJob = new Job("A", new Employer("B"), new Location(), new PositionType(""), new CoreCompetency("E"));
+        String correct = System.lineSeparator() +
+                "ID: " + "1" + System.lineSeparator() +
+                "Name: " + "A" + System.lineSeparator() +
+                "Employer: " + "B" + System.lineSeparator() +
+                "Location: " + "Data not available" + System.lineSeparator() +
+                "Position Type: " + "Data not available" + System.lineSeparator() +
+                "Core Competency: " + "E" +
+                System.lineSeparator();
+        assertEquals(aJob.toString(), correct);
+    }
+
 
 }
