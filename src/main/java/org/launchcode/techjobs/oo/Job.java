@@ -32,7 +32,6 @@ public class Job {
     }
 
 
-
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
@@ -52,8 +51,6 @@ public class Job {
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
-
-
 
     public int getId() {
         return id;

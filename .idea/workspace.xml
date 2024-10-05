@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Did Task 3." />
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Deleted accidental setter.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,10 +52,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build techjobs-oo-java-graded-17.executor": "Run",
+    "Gradle.TestTaskFour.executor": "Run",
     "Gradle.TestTaskSix.executor": "Run",
     "Gradle.TestTaskThree.executor": "Run",
     "Gradle.TestTaskTwo.executor": "Run",
     "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
+    "JUnit.JobTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -60,7 +67,31 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.TestTaskThree">
+  <component name="RunManager" selected="Gradle.TestTaskFour">
+    <configuration name="TestTaskFour" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFour&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TestTaskSix" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -157,8 +188,29 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="JobTest" type="JUnit" factoryName="JUnit">
+      <module name="techjobs-oo-java17-graded.test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
+      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.JobTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
+      <item itemvalue="Gradle.TestTaskFour" />
+      <item itemvalue="Gradle.TestTaskSix" />
+      <item itemvalue="Gradle.TestTaskThree" />
+      <item itemvalue="Gradle.TestTaskTwo" />
+      <item itemvalue="JUnit.JobTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestTaskFour" />
         <item itemvalue="Gradle.TestTaskThree" />
         <item itemvalue="Gradle.TestTaskTwo" />
         <item itemvalue="Gradle.TestTaskSix" />
@@ -199,13 +251,22 @@
       <option name="project" value="LOCAL" />
       <updated>1728146918496</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Deleted accidental setter.">
+      <option name="closed" value="true" />
+      <created>1728147200439</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728147200439</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial test." />
     <MESSAGE value="Did Task 2." />
     <MESSAGE value="Did Task 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did Task 3." />
+    <MESSAGE value="Deleted accidental setter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted accidental setter." />
   </component>
 </project>
