@@ -1,5 +1,7 @@
 package org.launchcode.techjobs.oo;
 
+import java.util.Objects;
+
 public class PositionType {
 
     private int id;
@@ -17,9 +19,28 @@ public class PositionType {
     }
 
     // TODO: Add a custom toString() method that returns the data stored in 'value'.
+    public String toString(){
+        return value;
+    }
 
     // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
     //  their id fields match.
+
+    //WHICH METHOD TO USE OF THE TWO? I DID INSTANCE OF
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof PositionType)) return false;
+        PositionType that = (PositionType) o;
+        return getId() == that.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(getId());
+    }
+
 
     // Getters and Setters:
 
