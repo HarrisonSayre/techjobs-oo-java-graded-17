@@ -53,7 +53,7 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData(){
         Job aJob = new Job("A", new Employer("B"), new Location("C"), new PositionType("D"), new CoreCompetency( "E"));
         String correct = System.lineSeparator()+
-                "ID: " + "1" +System.lineSeparator()+
+                "ID: " + "4" +System.lineSeparator()+
                 "Name: " + "A" +System.lineSeparator()+
                 "Employer: " + "B" +System.lineSeparator()+
                 "Location: " + "C" +System.lineSeparator()+
@@ -65,9 +65,9 @@ public class JobTest {
 
     @Test
     public void testToStringHandlesEmptyField() {
-        Job aJob = new Job("A", new Employer("B"), new Location(), new PositionType(""), new CoreCompetency("E"));
+        Job aJob = new Job("A", new Employer("B"), new Location(""), new PositionType(""), new CoreCompetency("E"));
         String correct = System.lineSeparator() +
-                "ID: " + "1" + System.lineSeparator() +
+                "ID: " + "3" + System.lineSeparator() +
                 "Name: " + "A" + System.lineSeparator() +
                 "Employer: " + "B" + System.lineSeparator() +
                 "Location: " + "Data not available" + System.lineSeparator() +
@@ -75,6 +75,13 @@ public class JobTest {
                 "Core Competency: " + "E" +
                 System.lineSeparator();
         assertEquals(aJob.toString(), correct);
+    }
+
+    @Test
+    public void testWHY(){
+        Employer aJobField = new Employer("A");
+        Employer bJobField = new Employer("A");
+        assertFalse((aJobField.equals(bJobField)));
     }
 
 
