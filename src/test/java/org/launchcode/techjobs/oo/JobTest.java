@@ -2,9 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import org.junit.Test;
 
-//??? Which of the two should I be doing?
 import static org.junit.Assert.*;
-
 
 public class JobTest {
     //TODO: Create your unit tests here
@@ -83,6 +81,5 @@ public class JobTest {
         Employer bJobField = new Employer("A");
         assertFalse((aJobField.equals(bJobField)));
     }
-
 
 }

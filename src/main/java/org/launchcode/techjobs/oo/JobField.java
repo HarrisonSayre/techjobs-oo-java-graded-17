@@ -1,7 +1,5 @@
 package org.launchcode.techjobs.oo;
 
-import java.util.Objects;
-
 public abstract class JobField {
 
     String value;
@@ -20,7 +18,6 @@ public abstract class JobField {
     public String toString() {
         return value;
     }
-
 
     public String getValue() {
         return value;

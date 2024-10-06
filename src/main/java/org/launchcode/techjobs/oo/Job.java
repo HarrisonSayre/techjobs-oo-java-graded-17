@@ -31,11 +31,9 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
-
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
-    //chose instanceof method
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -47,13 +45,6 @@ public class Job {
     public int hashCode() {
         return Objects.hashCode(getId());
     }
-
-//    public String toString(){
-//        return
-//                System.lineSeparator();
-//                "ID: "+id;
-//                "Employer"+employer;
-//    }
 
     @Override
     public String toString() {
@@ -75,8 +66,6 @@ public class Job {
         }
         return o.toString();
     }
-
-
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
